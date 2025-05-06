@@ -4,34 +4,316 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="indexstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Travel Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>iTRAVEL</title>
 </head>
 <body>
 <div class="container">
             <header>
-                <h1>Travel Website</h1>
+                <a href="index.html"><h1><span>i</span>TRAVEL</h1></a>
                 <nav class="navbar">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="destinations.html">Destinations</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="onas.html"><button class="button">O NAS</button></a>
+                    <a href="kontakt.html"><button class="button">KONTAKT</button></a>
+                    <a href="rezerwacja.html"><button class="button">REZERWACJA</button></a>
+                    <a href="logowanie.html"><button class="button">LOGOWANIE</button></a>
                 </nav>
 </header>  
 <main>
-<div id="slider">
-    <h2>Welcome to Our Travel Website!</h2>
-    <p>Explore the world with us. Discover amazing destinations, travel tips, and more.</p>
-    
+<div class="intro">
+<div class="wstep"><span>Zacznij zwiedzać Europę w parę kliknięć!</span>
+    <br><br><br>
+    <a href="#content"><button class="btn"> ZOBACZ NASZĄ OFERTĘ
+    </button></a></div>
+<br>
 </div>
+<div id="content" class="content">
+    <h1>Kraje w ofercie</h1>
+    <div class="countries-grid">
+      <div class="country-card">
+        <img src="photos/hiszpania.jpg" alt="Hiszpania">
+        <div class="country-info">
+          <h2>Hiszpania</h2><img src="photos/flaga-hiszpania.jpg" alt="Flaga Hiszpanii" class="flaga">
+          <p>Hiszpania to kraj o bogatej historii, pięknych plażach i pysznej kuchni. Oferuje wiele atrakcji turystycznych, w tym zabytki, muzea i parki narodowe.</p>
+        </div>
+      </div>
+      
+      <div class="country-card">
+        <img src="photos/wlochy.jpeg" alt="Włochy">
+        <div class="country-info">
+          <h2>Włochy</h2><img src="photos/wlochy.png" alt="Flaga Włoch" class="flaga">
+          <p>Włochy słyną z bogatej historii, sztuki, architektury i kuchni. To dom wielu zabytków UNESCO, malowniczych miast i pięknych wybrzeży Morza Śródziemnego.</p>
+        </div>
+      </div>
+      
+      <div class="country-card">
+        <img src="photos/chorwacja.jpg" alt="Chorwacja">
+        <div class="country-info">
+          <h2>Chorwacja</h2><img src="photos/Flag_of_Croatia.png" alt="Flaga Chorwacji" class="flaga">
+          <p>Chorwacja to kraj położony nad Adriatykiem, słynący z pięknych plaż, urokliwych miasteczek i bogatej historii. Łączy w sobie śródziemnomorski klimat z dziedzictwem rzymskim i weneckim, co czyni ją wyjątkowym kierunkiem podróży.</p>
+        </div>
+      </div>
+      
+      <div class="country-card">
+        <img src="photos/grecja.jpeg" alt="Grecja">
+        <div class="country-info">
+          <h2>Grecja</h2><img src="photos/grecja.png" alt="Flaga Grecji" class="flaga">
+          <p>Grecja to kolebka zachodniej cywilizacji z imponującymi zabytkami starożytności. Oferuje piękne wyspy, krystalicznie czystą wodę i tradycyjną kuchnię śródziemnomorską.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="onas-section">
+    <div class="onas-container">
+      <div class="onas-image">
+        <img src="photos/ilnur-kalimullin-ao7E5wZ77ds-unsplash.jpg" alt="Ludzie cieszący się podróżą" class="onas-img">
+      </div>
+      <div class="onas-content">
+        <h1>O nas</h1>
+        <h2>Kim jesteśmy?</h2>
+        <p>iTRAVEL to biuro podróży, które oferuje kompleksową obsługę w zakresie organizacji wycieczek do najpiękniejszych miejsc w Europie. Nasza misja to zapewnienie niezapomnianych chwil i komfortu podczas podróży. Dzięki współpracy z najlepszymi przewoźnikami i hotelami, gwarantujemy wysoką jakość usług oraz konkurencyjne ceny.</p>
+        <!-- From Uiverse.io by cssbuttons-io --> 
+        <a href="onas.html"><button class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Czytaj dalej</span>
+        </button></a>
+      </div>
+    </div>
+  </div>
+  <div class="opinie-section">
+    <h1>Opinie</h1>
+    <h2>Co o nas sądzą?</h2>
+    <div class="reviews-container">
+      <div class="reviews-slider">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-img">
+              <img src="photos/depositphotos_173795806-stock-photo-man-pointing-away-with-finger.jpg" alt="Jan Kowalski">
+            </div>
+            <h3>Jan Kowalski</h3>
+          </div>
+          <p class="review-text">"Wspaniała wycieczka do Hiszpanii! Wszystko było perfekcyjnie zorganizowane, od transportu po zakwaterowanie. Przewodnicy byli bardzo pomocni i kompetentni. Polecam iTRAVEL każdemu, kto chce zwiedzić Europę bez stresu."</p>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+        
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-img">
+              <img src="photos/smiling-woman_W6GFOSFAXA.jpg" alt="Anna Nowak">
+            </div>
+            <h3>Anna Nowak</h3>
+          </div>
+          <p class="review-text">"Byłam na wycieczce we Włoszech i jestem zachwycona! Piękne widoki, pyszne jedzenie i świetna organizacja. Dzięki iTRAVEL mogłam w pełni cieszyć się wakacjami bez martwienia się o szczegóły. Na pewno skorzystam ponownie!"</p>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+        
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-img">
+              <img src="photos/gosciu.jpg" alt="Piotr Wiśniewski">
+            </div>
+            <h3>Piotr Wiśniewski</h3>
+          </div>
+          <p class="review-text">"Chorwacja z iTRAVEL to był strzał w dziesiątkę! Cudowne plaże, krystalicznie czysta woda i urokliwe miasteczka. Obsługa klienta na najwyższym poziomie, zawsze gotowi pomóc. Polecam wszystkim miłośnikom podróży!"</p>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+        
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-img">
+              <img src="photos/pexels-photo-1239291.jpeg" alt="Magdalena Kowalczyk">
+            </div>
+            <h3>Magdalena Kowalczyk</h3>
+          </div>
+          <p class="review-text">"Grecja z iTRAVEL to było spełnienie moich marzeń! Santorini zachwyca na każdym kroku. Profesjonalna obsługa, świetnie zaplanowane wycieczki i niezapomniane widoki. Dziękuję za te wspaniałe wspomnienia!"</p>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+        
+        <!-- Review 5 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-img">
+              <img src="photos/pexels-mastercowley-897817.jpg" alt="Tomasz Lewandowski">
+            </div>
+            <h3>Tomasz Lewandowski</h3>
+          </div>
+          <p class="review-text">"Było zajebiście polecam"</p>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+        </div>
+        
+        <!-- Review 6 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-img">
+              <img src="photos/pexels-photo-774909.jpeg" alt="Karolina Zielińska">
+            </div>
+            <h3>Karolina Zielińska</h3>
+          </div>
+          <p class="review-text">"Włochy z iTRAVEL to była prawdziwa uczta dla zmysłów! Wenecja, Florencja, Rzym - każde miasto miało swój niepowtarzalny urok. Świetna organizacja, komfortowe zakwaterowanie i profesjonalni przewodnicy. Polecam z całego serca!"</p>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slider-controls">
+        <button class="prev-btn" aria-label="Poprzednia opinia">❮</button>
+        <button class="next-btn" aria-label="Następna opinia">❯</button>
+      </div>
+    </div>
+  </div>
 </main>
 <footer>
-    <p>&copy; 2023 Travel Website. All rights reserved.</p>
-    <p>Designed by Your Name</p>
-    <p>Contact: <a href="mailto:zsttpokupniak@gmail.com">zsttpgorzelany@gmail.com</a>
-
+    <p>&copy; 2025 iTRAVEL. Wszystkie prawa zastrzeżone.</p>
+    <p>Telefon: 123 456 789</p>
+    <p>Kontakt: <a href="mailto:zsttpokupniak@gmail.com">zsttpgorzelany@gmail.com</a>
+    <p>Social Media:</p>
+<div class="button-container">
+    <button class="button flex-center">
+      <svg
+        viewBox="0 0 24 24"
+        class="btn-svg"
+        width="22px"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+            fill="#fff"
+          ></path>
+          <path
+            d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+            fill="#fff"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+            fill="#fff"
+          ></path>
+        </g>
+      </svg>
+    </button>
+    <button class="button flex-center">
+      <svg
+        fill="#fff"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        class="btn-svg"
+        width="22px"
+        viewBox="0 -2 20 20"
+      >
+        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+        <g
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          id="SVGRepo_tracerCarrier"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <title>twitter [#154]</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g
+            fill-rule="evenodd"
+            fill="none"
+            stroke-width="1"
+            stroke="none"
+            id="Page-1"
+          >
+            <g
+              fill="#fff"
+              transform="translate(-60.000000, -7521.000000)"
+              id="Dribbble-Light-Preview"
+            >
+              <g transform="translate(56.000000, 160.000000)" id="icons">
+                <path
+                  id="twitter-[#154]"
+                  d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                ></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+   
+    <button class="button flex-center">
+      <svg
+        stroke="#fff"
+        fill="#fff"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        class="btn-svg"
+        width="22px"
+        viewBox="0 -3 20 20"
+      >
+        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+        <g
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          id="SVGRepo_tracerCarrier"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <title>youtube [#fff168]</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g
+            fill-rule="evenodd"
+            fill="none"
+            stroke-width="1"
+            stroke="none"
+            id="Page-1"
+          >
+            <g
+              fill="#fff"
+              transform="translate(-300.000000, -7442.000000)"
+              id="Dribbble-Light-Preview"
+            >
+              <g transform="translate(56.000000, 160.000000)" id="icons">
+                <path
+                  id="youtube-[#fff168]"
+                  d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
+                ></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+  
 </footer>
 </div>
 <script src="script.js"></script>
