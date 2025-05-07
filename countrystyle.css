@@ -5,7 +5,6 @@ main {
   
   /* Hero section */
   .country-hero {
-    background-image: url("photos/spain-hero.jpg");
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -314,7 +313,6 @@ main {
   
   /* Booking CTA section */
   .booking-cta {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("photos/spain-beach.jpg");
     background-size: cover;
     background-position: center;
     padding: 100px 0;

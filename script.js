@@ -30,18 +30,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Event listeners for buttons
-  nextBtn.addEventListener("click", nextSlide)
-  prevBtn.addEventListener("click", prevSlide)
+  if (nextBtn && prevBtn) {
+    nextBtn.addEventListener("click", nextSlide)
+    prevBtn.addEventListener("click", prevSlide)
 
-  // Initialize slider
-  updateSlider()
+    // Initialize slider
+    updateSlider()
+  }
 })
 
-
-
-
-// HISZPANIA
+// Dropdown menu functionality
 document.addEventListener("DOMContentLoaded", function() {
+  // Mobile dropdown toggle
+  const dropdownBtn = document.querySelector('.dropbtn')
+  const dropdownContent = document.querySelector('.dropdown-content')
+  
+  if (dropdownBtn && dropdownContent) {
+    // For mobile devices, toggle dropdown on click
+    if (window.innerWidth < 768) {
+      dropdownBtn.addEventListener('click', function(e) {
+        e.preventDefault()
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block'
+      })
+    }
+  }
+
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -59,55 +72,31 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
-  // Hotel availability check buttons
-  const checkButtons = document.querySelectorAll('.check-btn');
-  checkButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const hotelName = this.closest('.hotel-card').querySelector('h3').textContent;
-      alert(`Sprawdzanie dostępności dla hotelu: ${hotelName}\nW przygotowaniu - funkcja będzie dostępna wkrótce!`);
-    });
-  });
-  
-  // Destination reservation buttons
-  const reserveButtons = document.querySelectorAll('.reserve-btn');
-  reserveButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const destinationName = this.closest('.destination-card').querySelector('h3').textContent;
-      alert(`Sprawdzanie terminów dla wycieczki: ${destinationName}\nW przygotowaniu - funkcja będzie dostępna wkrótce!`);
-    });
-  });
-  
-  // CTA button
-  const ctaButton = document.querySelector('.cta-button');
-  if (ctaButton) {
-    ctaButton.addEventListener('click', function() {
-      window.location.href = 'rezerwacja.html';
-    });
-  }
-  
-  // Animation for reason cards on scroll
-  const reasonCards = document.querySelectorAll('.reason-card');
+  // Animation for reason boxes on scroll
+  const reasonBoxes = document.querySelectorAll('.reason-box, .value-box, .team-member');
   
   function checkScroll() {
-    reasonCards.forEach(card => {
-      const cardTop = card.getBoundingClientRect().top;
+    reasonBoxes.forEach(box => {
+      const boxTop = box.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
       
-      if (cardTop < windowHeight * 0.8) {
-        card.style.opacity = '1';
-        card.style.transform = 'translateY(0)';
+      if (boxTop < windowHeight * 0.8) {
+        box.style.opacity = '1';
+        box.style.transform = 'translateY(0)';
       }
     });
   }
   
   // Set initial state for animation
-  reasonCards.forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-  });
-  
-  // Check on scroll and initial load
-  window.addEventListener('scroll', checkScroll);
-  checkScroll(); // Check on page load
+  if (reasonBoxes.length > 0) {
+    reasonBoxes.forEach(box => {
+      box.style.opacity = '0';
+      box.style.transform = 'translateY(20px)';
+      box.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    });
+    
+    // Check on scroll and initial load
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Check on page load
+  }
 });
