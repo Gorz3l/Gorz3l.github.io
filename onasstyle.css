@@ -1,4 +1,3 @@
-
 /* Dropdown menu styles */
 .dropdown {
     position: relative;
@@ -11,7 +10,7 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Increased z-index to ensure it appears above other elements */
+    z-index: 9999; /* Significantly increased z-index to ensure it appears above all elements */
     width: 100%;
     border-radius: 5px;
     left: -20px; /* Shift the dropdown a bit to the left */
@@ -42,7 +41,8 @@
   /* Make sure the header has a higher z-index than main */
   header {
     position: sticky;
-    z-index: 1001; /* Higher than the dropdown to ensure proper layering */
+    z-index: 9999; /* Significantly higher than the dropdown to ensure proper layering */
+    top: 0;
   }
   
   /* Ensure main doesn't overlap with the dropdown */
@@ -51,251 +51,256 @@
     z-index: 1; /* Lower z-index than the dropdown */
   }
   
-
-/* About section styles */
-.about-section {
+  /* Fix for dropdown menu to appear above all content */
+  .navbar {
+    position: relative;
+    z-index: 9999; /* Match header z-index */
+  }
+  
+  /* About section styles */
+  .about-section {
     padding: 80px 0;
     background-color: #f5f8fa;
-}
-
-.about-container {
+  }
+  
+  .about-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.about-section h1 {
+  }
+  
+  .about-section h1 {
     font-size: 60px;
     color: var(--title-color1);
     font-family: "Marcellus", serif;
     margin-bottom: 40px;
     text-align: center;
-}
-
-.about-content {
+  }
+  
+  .about-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
-}
-
-.about-text h2 {
+  }
+  
+  .about-text h2 {
     font-size: 36px;
     color: var(--title-color2);
     font-family: "Marcellus", serif;
     margin-bottom: 20px;
-}
-
-.about-text p {
+  }
+  
+  .about-text p {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
     margin-bottom: 30px;
-}
-
-/* Reasons grid */
-.reasons-grid {
+  }
+  
+  /* Reasons grid */
+  .reasons-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 30px;
-}
-
-.reason-box {
+  }
+  
+  .reason-box {
     background-color: white;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-}
-
-.reason-box:hover {
+  }
+  
+  .reason-box:hover {
     transform: translateY(-10px);
-}
-
-.reason-icon {
+  }
+  
+  .reason-icon {
     font-size: 48px;
     margin-bottom: 20px;
-}
-
-.reason-box h3 {
+  }
+  
+  .reason-box h3 {
     font-size: 24px;
     color: var(--title-color1);
     font-family: "Marcellus", serif;
     margin-bottom: 15px;
-}
-
-.reason-box p {
+  }
+  
+  .reason-box p {
     font-size: 16px;
     line-height: 1.6;
     color: #555;
     margin-bottom: 0;
-}
-
-/* Team section */
-.team-section {
+  }
+  
+  /* Team section */
+  .team-section {
     padding: 80px 0;
     background-color: #ffffff;
-}
-
-.team-container {
+  }
+  
+  .team-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
-}
-
-.team-section h2 {
+  }
+  
+  .team-section h2 {
     font-size: 48px;
     color: var(--title-color1);
     font-family: "Marcellus", serif;
     margin-bottom: 20px;
-}
-
-.team-intro {
+  }
+  
+  .team-intro {
     font-size: 20px;
     color: #555;
     max-width: 800px;
     margin: 0 auto 50px;
-}
-
-.team-grid {
+  }
+  
+  .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-}
-
-.team-member {
+  }
+  
+  .team-member {
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-}
-
-.team-member:hover {
+  }
+  
+  .team-member:hover {
     transform: translateY(-10px);
-}
-
-.member-photo {
+  }
+  
+  .member-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 20px;
     border: 3px solid var(--title-color1);
-}
-
-.member-photo img {
+  }
+  
+  .member-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.team-member h3 {
+  }
+  
+  .team-member h3 {
     font-size: 24px;
     color: var(--title-color1);
     font-family: "Marcellus", serif;
     margin-bottom: 5px;
-}
-
-.member-role {
+  }
+  
+  .member-role {
     font-size: 16px;
     color: var(--title-color2);
     font-weight: 600;
     margin-bottom: 15px;
-}
-
-.member-desc {
+  }
+  
+  .member-desc {
     font-size: 16px;
     line-height: 1.6;
     color: #555;
-}
-
-/* Values section */
-.values-section {
+  }
+  
+  /* Values section */
+  .values-section {
     padding: 80px 0;
     background-color: #f5f8fa;
-}
-
-.values-container {
+  }
+  
+  .values-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
-}
-
-.values-section h2 {
+  }
+  
+  .values-section h2 {
     font-size: 48px;
     color: var(--title-color1);
     font-family: "Marcellus", serif;
     margin-bottom: 50px;
-}
-
-.values-grid {
+  }
+  
+  .values-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-}
-
-.value-box {
+  }
+  
+  .value-box {
     background-color: white;
     border-radius: 10px;
     padding: 40px 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-}
-
-.value-box:hover {
+  }
+  
+  .value-box:hover {
     transform: translateY(-10px);
-}
-
-.value-box h3 {
+  }
+  
+  .value-box h3 {
     font-size: 28px;
     color: var(--title-color1);
     font-family: "Marcellus", serif;
     margin-bottom: 15px;
-}
-
-.value-box p {
+  }
+  
+  .value-box p {
     font-size: 18px;
     line-height: 1.6;
     color: #555;
-}
-
-/* CTA section */
-.cta-section {
+  }
+  
+  /* CTA section */
+  .cta-section {
     padding: 100px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('photos/tlochorwacja.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("photos/tlochorwacja.jpg");
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-}
-
-.cta-container {
+  }
+  
+  .cta-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.cta-section h2 {
+  }
+  
+  .cta-section h2 {
     font-size: 48px;
     font-family: "Marcellus", serif;
     margin-bottom: 20px;
-}
-
-.cta-section p {
+  }
+  
+  .cta-section p {
     font-size: 20px;
     margin-bottom: 40px;
-}
-
-.cta-buttons {
+  }
+  
+  .cta-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-.cta-button {
+  }
+  
+  .cta-button {
     display: inline-block;
     background-color: var(--title-color2);
     color: white;
@@ -306,64 +311,65 @@
     font-weight: 600;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-}
-
-.cta-button:hover {
+  }
+  
+  .cta-button:hover {
     background-color: var(--title-color1);
     transform: scale(1.05);
-}
-
-.cta-button.secondary {
+  }
+  
+  .cta-button.secondary {
     background-color: transparent;
     border: 2px solid white;
-}
-
-.cta-button.secondary:hover {
+  }
+  
+  .cta-button.secondary:hover {
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Responsive styles */
-@media (max-width: 1200px) {
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
     .reasons-grid,
     .values-grid {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-    
+  
     .team-grid {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-}
-
-@media (max-width: 992px) {
+  }
+  
+  @media (max-width: 992px) {
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-    
+  
     .cta-buttons {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-    
+  
     .cta-button {
-        width: 80%;
+      width: 80%;
     }
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .reasons-grid,
     .values-grid,
     .team-grid {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-    
+  
     .about-section h1,
     .team-section h2,
     .values-section h2,
     .cta-section h2 {
-        font-size: 36px;
+      font-size: 36px;
     }
-    
+  
     .about-text h2 {
-        font-size: 28px;
+      font-size: 28px;
     }
-}
+  }
+  
