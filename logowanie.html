@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/mainstyle.css">
-    <link rel="stylesheet" href="styles/onasstyle.css">
+    <link rel="stylesheet" href="styles/logowaniestyle.css">
     <link rel="icon" href="photos/ikona.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,108 +26,66 @@
         </nav>
     </header>  
     <main>
-        <div class="about-section">
-            <div class="about-container">
-                <h1>O Nas</h1>
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>Kim jesteśmy?</h2>
-                        <p>iTRAVEL to biuro podróży, które oferuje kompleksową obsługę w zakresie organizacji wycieczek do najpiękniejszych miejsc w Europie. Nasza misja to zapewnienie niezapomnianych chwil i komfortu podczas podróży. Dzięki współpracy z najlepszymi przewoźnikami i hotelami, gwarantujemy wysoką jakość usług oraz konkurencyjne ceny.</p>
-                        
-                        <h2>Nasza historia</h2>
-                        <p>Firma iTRAVEL została założona w 2010 roku przez grupę pasjonatów podróży, którzy marzyli o stworzeniu biura podróży oferującego wyjątkowe doświadczenia turystyczne. Przez lata działalności zdobyliśmy zaufanie tysięcy klientów, którzy doceniają nasze profesjonalne podejście i indywidualne traktowanie każdego podróżnika.</p>
-                        
-                        <h2>Dlaczego warto wybrać iTRAVEL?</h2>
-                        <div class="reasons-grid">
-                            <div class="reason-box">
-                                <div class="reason-icon">🌍</div>
-                                <h3>Doświadczenie</h3>
-                                <p>Ponad 15 lat doświadczenia w branży turystycznej pozwala nam tworzyć wyjątkowe oferty podróży.</p>
-                            </div>
-                            <div class="reason-box">
-                                <div class="reason-icon">👨‍👩‍👧‍👦</div>
-                                <h3>Indywidualne podejście</h3>
-                                <p>Każdą wycieczkę dostosowujemy do potrzeb i oczekiwań naszych klientów.</p>
-                            </div>
-                            <div class="reason-box">
-                                <div class="reason-icon">💰</div>
-                                <h3>Konkurencyjne ceny</h3>
-                                <p>Oferujemy atrakcyjne ceny przy zachowaniu najwyższej jakości usług.</p>
-                            </div>
-                            <div class="reason-box">
-                                <div class="reason-icon">🛡️</div>
-                                <h3>Bezpieczeństwo</h3>
-                                <p>Gwarantujemy pełne bezpieczeństwo i wsparcie podczas całej podróży.</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h2>Logowanie</h2>
+                    <p>Zaloguj się, aby zarządzać swoimi rezerwacjami</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="team-section">
-            <div class="team-container">
-                <h2>Nasz zespół</h2>
-                <p class="team-intro">Poznaj ludzi, którzy tworzą iTRAVEL i dbają o Twoje niezapomniane wakacje.</p>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="member-photo">
-                            <img src="photos/istockphoto-2005859115-640x640.jpg" alt="Jan Kowalski" onerror="this.src='/placeholder.svg?height=200&width=200'">
+                
+                <form id="login-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-with-icon">
+                            <i class="icon">✉️</i>
+                            <input type="email" id="email" name="email" placeholder="Twój adres email" required>
                         </div>
-                        <h3>Ewa Bajorska</h3>
-                        <p class="member-role">Założycielka i Dyrektorka</p>
-                        <p class="member-desc">Pasjonatka podróży z ponad 20-letnim doświadczeniem w branży turystycznej.</p>
                     </div>
-                    <div class="team-member">
-                        <div class="member-photo">
-                            <img src="photos/istockphoto-2006436002-640x640.jpg" alt="Anna Nowak" onerror="this.src='/placeholder.svg?height=200&width=200'">
+                    
+                    <div class="form-group">
+                        <label for="password">Hasło</label>
+                        <div class="input-with-icon">
+                            <i class="icon">🔒</i>
+                            <input type="password" id="password" name="password" placeholder="Twoje hasło" required>
                         </div>
-                        <h3>Paweł Kowalski</h3>
-                        <p class="member-role">Kierownik ds. Obsługi Klienta</p>
-                        <p class="member-desc">Specjalista od zadowolenia klientów, zawsze służy pomocą i dobrą radą.</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-photo">
-                            <img src="photos/360_F_242522709_ZhoDmO1L1PHkL6yvVVNutSBGsk1Ob7m0.jpg" alt="Piotr Wiśniewski" onerror="this.src='/placeholder.svg?height=200&width=200'">
+                        <div class="password-options">
+                            <label class="remember-me">
+                                <input type="checkbox" name="remember">
+                                <span>Zapamiętaj mnie</span>
+                            </label>
+                            <a href="#" class="forgot-password">Zapomniałeś hasła?</a>
                         </div>
-                        <h3>Szymon Nowak</h3>
-                        <p class="member-role">Główny Przewodnik</p>
-                        <p class="member-desc">Zna każdy zakątek Europy i potrafi opowiedzieć fascynujące historie o każdym miejscu.</p>
                     </div>
-                </div>
+                    
+                    <button type="submit" class="auth-button">Zaloguj się</button>
+                    
+                    <div class="auth-divider">
+                        <span>lub</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-button google">
+                            <i class="social-icon">G</i>
+                            <span>Zaloguj przez Google</span>
+                        </button>
+                        <button type="button" class="social-button facebook">
+                            <i class="social-icon">f</i>
+                            <span>Zaloguj przez Facebook</span>
+                        </button>
+                    </div>
+                    
+                    <div class="auth-footer">
+                        <p>Nie masz jeszcze konta? <a href="rejestracja.html">Zarejestruj się</a></p>
+                    </div>
+                </form>
             </div>
-        </div>
-
-        <div class="values-section">
-            <div class="values-container">
-                <h2>Nasze wartości</h2>
-                <div class="values-grid">
-                    <div class="value-box">
-                        <h3>Jakość</h3>
-                        <p>Dbamy o najwyższą jakość naszych usług na każdym etapie organizacji podróży.</p>
+            
+            <div class="auth-image">
+                <img src="photos/pexels-thorsten-technoman-109353-338504.jpg" alt="Podróż z iTRAVEL">
+                <div class="image-overlay">
+                    <div class="overlay-content">
+                        <h3>Odkryj świat z iTRAVEL</h3>
                     </div>
-                    <div class="value-box">
-                        <h3>Pasja</h3>
-                        <p>Kochamy podróże i dzielimy się tą pasją z naszymi klientami.</p>
-                    </div>
-                    <div class="value-box">
-                        <h3>Odpowiedzialność</h3>
-                        <p>Działamy odpowiedzialnie wobec naszych klientów, partnerów i środowiska.</p>
-                    </div>
-                    <div class="value-box">
-                        <h3>Innowacyjność</h3>
-                        <p>Stale poszukujemy nowych, ciekawych kierunków i rozwiązań dla naszych klientów.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="cta-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('photos/pexels-thorsten-technoman-109353-338504.jpg')">
-            <div class="cta-container">
-                <h2>Gotowy na przygodę?</h2>
-                <p>Już dziś zaplanuj swoją wymarzoną podróż!</p>
-                <div class="cta-buttons">
-                    <a href="rezerwacja.html" class="cta-button">Zarezerwuj wycieczkę</a>
                 </div>
             </div>
         </div>
@@ -264,5 +222,6 @@
     </footer>
 </div>
 <script src="script.js"></script>
+<script src="logowanie.js"></script>
 </body>
 </html>
